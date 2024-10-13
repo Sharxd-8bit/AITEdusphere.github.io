@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Edusphere</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+           background-image: url('marcus aurilius.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+        .signup-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            max-width: 90%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .input-group input:focus {
+            border-color: #00c6ff;
+            outline: none;
+        }
+        .signup-btn {
+            width: 100%;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .signup-btn:hover {
+            background: linear-gradient(to right, #5b86e5, #36d1dc);
+        }
+        .or-divider {
+            text-align: center;
+            margin: 20px 0;
+            color: #888;
+            position: relative;
+        }
+        .or-divider::before, .or-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: #ddd;
+        }
+        .or-divider::before {
+            left: 0;
+        }
+        .or-divider::after {
+            right: 0;
+        }
+        .social-signin {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .social-signin button {
+            width: 48%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        .social-signin button img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .google-signin {
+            background-color: #db4437;
+            color: white;
+        }
+        .google-signin:hover {
+            background-color: #c53727;
+        }
+        .outlook-signin {
+            background-color: #0078d4;
+            color: white;
+        }
+        .outlook-signin:hover {
+            background-color: #005a9e;
+        }
+        /* Responsive styling */
+        @media screen and (max-width: 768px) {
+            .signup-container {
+                width: 100%;
+                padding: 20px;
+            }
+            .social-signin button {
+                padding: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <form>
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password">
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <div class="or-divider">OR</div>
+        <div class="social-signin">
+            <button class="google-signin">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google logo">
+                Sign in with Google
+            </button>
+            <button class="outlook-signin">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Outlook.com_icon.svg" alt="Outlook logo">
+                Sign in with Outlook
+            </button>
+        </div>
+    </div>
+</body>
+</html>

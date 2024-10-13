@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Progress - Engineering Program Management</title>
+    <link rel="stylesheet" href="progress.css">
+    <script defer src="progress.js"></script>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <img src="logo.jpeg" alt="" width="100px" class="imagelogo">
+                <li><a class="nav-button" href="index.html">Home</a></li>
+                <li><a class="nav-button" href="courses.html">Courses</a></li>
+                <li><a class="nav-button" href="progress.html">Progress</a></li>
+               
+                <li><a class="nav-button" href="resources.html">Resources</a></li>
+                <li><a class="nav-button" href="Sign-up.html">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="progress">
+            <h2>Track Your Academic Progress</h2>
+            <div id="grades">
+                <h3>Your Grades</h3>
+                <ul id="grades-list">
+                    <!-- Grades will be dynamically added here -->
+                </ul>
+                <button id="add-grade-btn">Add Grade</button>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-circle">
+                    <span class="progress-text" id="progress-text">0%</span>
+                    <div class="circle"></div>
+                    <div class="circle left"></div>
+                    <div class="circle right"></div>
+                </div>
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+            </div>
+                        
+            <div id="courses-completed">
+                <h3>Completed Courses</h3>
+                <ul id="courses-completed-list">
+                    <!-- Completed courses will be dynamically added here -->
+                </ul>
+                <button id="add-completed-course-btn">Add Completed Course</button>
+            </div>
+            <div id="goals">
+                <h3>Your Goals</h3>
+                <ul id="goals-list">
+                    <!-- Goals will be dynamically added here -->
+                </ul>
+                <button id="add-goal-btn">Add Goal</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.jpeg" alt="Logo">
+        </div>
+        <p>&copy; 2024 Engineering Program Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
